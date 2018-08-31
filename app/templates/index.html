@@ -1,0 +1,56 @@
+{% extends base %}
+{% block preamble %}
+
+  <!-- Bootstrap -->
+  <!--<link href="app/static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <!--<link href="app/static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+  <!-- Custom Style -->
+  <link href="app/static/css/custom.min.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block contents %}
+
+<div class="container body">
+  <div class="main_container">
+
+
+    <!-- page content -->
+    <div class="right_col" role="main">
+
+      <!-- top tiles -->
+      <!--<div class="row tile_count">-->
+        <!--<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">-->
+          <!--<span class="count_top"><i class="fa fa-user"></i>Test</span>-->
+          <!--<div class="count">10</div>-->
+          <!--<span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>10% </i> From last Week</span>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!-- /top tiles -->
+
+      <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel tile overflow_hidden">
+              <div class="row x_title">
+                <div class="col-md-6">
+                  <h3>Probability Distributions</h3>
+                </div>
+              </div>
+              {{ embed(roots.content) }}
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- /page content -->
+
+{% endblock %}

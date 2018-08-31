@@ -119,4 +119,3 @@ dependencies:
   - prometheus-client==0.3.1
   - prompt-toolkit==1.0.15
   - service-identity==17.0.0
-prefix: /Users/caa0107/anaconda/envs/bayesian-coin-flipping
